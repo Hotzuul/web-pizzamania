@@ -11,4 +11,14 @@ public class Controlador {
     public String inicio(Model model) {
         return "login";
     }
+
+    @GetMapping("/registrar")
+    public String inicio1(Model model) {
+        return "registrar";
+    }
+
+    @GetMapping("/index")
+    public String inicio2(Model model) {
+        return "index";
+    }
 }

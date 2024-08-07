@@ -1,11 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pizza Manía - Login</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro - Pizza Mania</title>
 
     <!-- Bootstrap -->
 
@@ -18,14 +16,23 @@
     <!-- CSS -->
 
     <link rel="stylesheet" href="/css/style.css">
-
 </head>
-
 <body>
-
     <div class="wrapper">
         <form action="#">
-            <h2>Pizza Mania</h2>
+            <h2>Registro Pizza Mania</h2>
+            <div class="input-field">
+                <input type="text" required>
+                <label>Dni:</label>
+            </div>
+            <div class="input-field">
+                <input type="text" required>
+                <label>Nombres:</label>
+            </div>
+            <div class="input-field">
+                <input type="text" required>
+                <label>Apellidos:</label>
+            </div>
             <div class="input-field">
                 <input type="text" required>
                 <label>Email:</label>
@@ -34,15 +41,8 @@
                 <input type="password" required>
                 <label>Contraseña:</label>
             </div><br>
-            <div class="forgot-password">
-                <a href="#">Has olvidado tu contraseña?</a>
-            </div><br>
-            <a class="btn  btn-outline-light" th:href="@{/index}">Ingresar</a>
-            <div class="register">
-                <p>No tengo una cuenta? <a th:href="@{/registrar}">Registrar</a></p>
-            </div>
+            <button type="submit">Guardar</button>
         </form>
     </div>
 </body>
-
 </html>
